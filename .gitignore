@@ -105,4 +105,5 @@ dist
 
 # Release script related
 release*
+!release*.yaml
 tag-nodejs*
