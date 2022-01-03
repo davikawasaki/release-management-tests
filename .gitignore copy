@@ -1,0 +1,5 @@
+node_modules
+
+# Release script related
+release*
+tag-nodejs*
