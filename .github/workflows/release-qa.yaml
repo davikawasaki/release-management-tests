@@ -7,9 +7,9 @@ name: Release on pre
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
-    if: ${{ github.event.head_commit.message != 'release**' }}
+    if: github.event.head_commit.message != 'release*'
     steps:
-      - run: echo ${{ github.event.head_commit.message != 'release**' }}
+      - run: echo ${{ github.event.head_commit.message != 'release*' }}
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
