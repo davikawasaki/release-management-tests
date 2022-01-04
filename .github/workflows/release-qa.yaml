@@ -7,9 +7,9 @@ name: Release on pre
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
-    if: github.event.head_commit.message != 'release*'
+    if: ${{ !startsWith(github.event.head_commit.message, 'release') && !endsWith(github.event.head_commit.message, 'pre.[0-9]+') }}
     steps:
-      - run: echo ${{ github.event.head_commit.message != 'release*' }}
+      - run: echo ${{ !startsWith(github.event.head_commit.message, 'release') && !endsWith(github.event.head_commit.message, 'pre.[0-9]+') }}
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
