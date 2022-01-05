@@ -21,9 +21,6 @@ jobs:
           if [ ${{ github.event.inputs.release_branch }} == '' ]; then
             echo 'Release branch not defined'
             exit 1
-          elif [[ $(git checkout ${{ github.event.inputs.release_branch }}) -eq 0 ]]; then
-            echo 'Unexistent release branch'
-            exit 1
           fi
       - name: Check release type
         run: |
