@@ -10,7 +10,7 @@ name: Manual release for staging
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    if: github.actor == 'davikawasakitest'
+    if: github.actor == 'davikawasaki'
     steps:
       - uses: actions/checkout@v2
         with:
