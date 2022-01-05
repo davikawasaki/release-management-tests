@@ -16,13 +16,13 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.PAT }}
-        if: ${{ github.event.inputs.hot_fix_branch }} == ''
+        if: ${{ github.event.inputs.hot_fix_branch == '' }}
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
           token: ${{ secrets.PAT }}
           ref: ${{ github.event.inputs.hot_fix_branch }}
-        if: ${{ github.event.inputs.hot_fix_branch }} != ''
+        if: ${{ github.event.inputs.hot_fix_branch != '' }}
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
