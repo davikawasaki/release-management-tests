@@ -14,7 +14,7 @@ name: Manual release for production
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    if: github.actor == 'davikawasakitest'
+    if: github.actor == 'davikawasaki'
     steps:
       - name: Check branch existence
         run: |
