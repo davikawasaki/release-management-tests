@@ -37,7 +37,7 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.PAT }}
-          ref: ${{ github.event.inputs.release_branch }}
+          # ref: ${{ github.event.inputs.release_branch }}
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
