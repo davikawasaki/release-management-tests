@@ -33,7 +33,7 @@ jobs:
             ${{ runner.os }}-
       - name: Start release
         run: |
-          git status
+          git status 
           git config user.name 'Davi Kawasaki'
           git config user.email 'davishinjik@gmail.com'
           MASTER=main ./rel version pre
