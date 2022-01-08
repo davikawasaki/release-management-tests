@@ -1,7 +1,7 @@
 {
   "name": "@davikawasaki/release-management-tests",
   "description": "Automating release management",
-  "version": "0.7.0-staging.0",
+  "version": "0.7.0-staging.1",
   "repository": "git@github.com:davikawasaki/release-management-tests.git",
   "license": "ISC",
   "scripts": {
